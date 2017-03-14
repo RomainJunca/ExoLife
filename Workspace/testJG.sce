@@ -1,6 +1,6 @@
 // 1 - Load Image
 
-path = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_U\U1_surface.pbm"
+path = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_B\Gliese 667Cc_surface.pbm"
 
 image_in = readpbm(path);
 
@@ -15,11 +15,15 @@ image_in = readpbm(path);
 
 histo = histogrammeJG(image_in);
 
-histocumul = histogrammeCumuleJG(histo);
+minHisto = startHistoJG(histo);
+maxHisto = endHistoJG(histo);
 
-disp(histo);
+image_out = ameliorationCLJG(image_in, minHisto, maxHisto);
 
-plot(histocumul);
+display_gray(image_out);
+//disp(minHisto, maxHisto);
+
+//plot(histo);
 
 
 // 3 - Save Image
