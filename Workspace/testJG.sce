@@ -1,6 +1,6 @@
 // 1 - Load Image
 
-path = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_A\Jupiter1.pbm"
+path = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_U\U1_surface.pbm"
 
 image_in = readpbm(path);
 
@@ -11,9 +11,13 @@ image_in = readpbm(path);
 
 // 3 - Test de seuillage, fail probable
 
-image_out = seuilJG(image_in, 127);
+//image_out = seuilJG(image_in, 150);
 
-display_gray(image_out);
+histo = histogrammeJG(image_in);
+
+disp(histo);
+
+plot(histo);
 
 
 // 3 - Save Image
