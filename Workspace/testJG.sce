@@ -15,9 +15,11 @@ image_in = readpbm(path);
 
 histo = histogrammeJG(image_in);
 
+histocumul = histogrammeCumuleJG(histo);
+
 disp(histo);
 
-plot(histo);
+plot(histocumul);
 
 
 // 3 - Save Image
