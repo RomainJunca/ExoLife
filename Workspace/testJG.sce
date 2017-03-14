@@ -20,10 +20,12 @@ maxHisto = endHistoJG(histo);
 
 image_out = ameliorationCLJG(image_in, minHisto, maxHisto);
 
-display_gray(image_out);
-//disp(minHisto, maxHisto);
+histo2 = histogrammeJG(image_out);
 
-//plot(histo);
+display_gray(image_out);
+disp(minHisto, maxHisto, histo, histo2);
+
+//plot(histo2);
 
 
 // 3 - Save Image
