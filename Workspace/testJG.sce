@@ -15,15 +15,38 @@ image_in = readpbm(path);
 
 histo = histogrammeJG(image_in);
 
+histoCumul = histogrammeCumuleJG(histo);
+// DEBUT AMELIORATION CONTRASTES
 minHisto = startHistoJG(histo);
 maxHisto = endHistoJG(histo);
-
 image_out = ameliorationCLJG(image_in, minHisto, maxHisto);
+image_out2 = ameliorationContrasteEgalisation(image_in, histoCumul);
+// FIN AMELIORATION CONTRASTES
+histoI1 = histogrammeJG(image_out);
+histoCumul1 = histogrammeCumuleJG(histoI1);
 
-histo2 = histogrammeJG(image_out);
+histoI2 = histogrammeJG(image_out2);
+histoCumul2 = histogrammeCumuleJG(histoI2);
+//display_gray(image_out);
+disp(minHisto, maxHisto, histo, histoCumul);
 
+figure;
+display_gray(image_in);
+
+figure;
+plot(histoCumul);
+
+figure;
 display_gray(image_out);
-disp(minHisto, maxHisto, histo, histo2);
+
+figure;
+display_gray(image_out2);
+
+figure;
+plot(histoCumul1);
+
+figure;
+plot(histoCumul2);
 
 //plot(histo2);
 
