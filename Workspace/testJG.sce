@@ -1,6 +1,6 @@
 // 1 - Load Image
 
-path = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_U\U2_surface.pbm"
+path = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_A\Jupiter1.pbm"
 
 image_in = readpbm(path);
 
@@ -23,7 +23,7 @@ image_out = ameliorationCLJG(image_in, minHisto, maxHisto);
 image_out2 = ameliorationContrasteEgalisation(image_in, histoCumul);
 // FIN AMELIORATION CONTRASTES
 
-image_out3 = filtreSobel(image_in);
+image_out3 = filtreMedian(image_in);
 
 figure;
 display_gray(image_out3);
