@@ -7,24 +7,20 @@ function image_out=addimg(img1,img2)
     img2SizeX = size(img2,1);
     img2SizeY = size(img2,2);
     
-    img_out = zeros(img1SizeX,img1SizeY);
-    for x1 = 1: img1SizeX;
-        for y1= 1: img1SizeY;
-            for x2=1: img2SizeX;
-                for y2=1:img2SizeY;
-                    for img2SizeX <= img1SizeX
-                        for img2SizeY <= img1SizeX
-                            if (x1+x2>255,y1+y2>255) then
-                                img_out(x,y)= 255
-                            end
-                        end
-                    end
-                end
-            end
+    image_out = zeros(img1SizeX,img1SizeY);
+    
+    for x = 1: img1SizeX;
+        for y = 1: img1SizeY;
+            if x > img2SizeX || y > img2SizeY then
+                image_out(x, y) = img1(x, y);
+            elseif (img1(x, y)+img2(x,y))>255 then
+                image_out(x,y)=255;
+            else image_out(x,y)= img1(x,y)+img2(x,y);
+                
+            end,
         end
     end
     
-    img_out = img1(x,y)+img2(x,y)
                        
 endfunction
 
