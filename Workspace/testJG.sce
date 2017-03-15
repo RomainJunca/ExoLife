@@ -1,6 +1,6 @@
 // 1 - Load Image
 
-path = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_B\Gliese 667Cc_surface.pbm"
+path = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_A\Jupiter1.pbm"
 
 image_in = readpbm(path);
 
@@ -23,8 +23,11 @@ image_out = ameliorationCLJG(image_in, minHisto, maxHisto);
 image_out2 = ameliorationContrasteEgalisation(image_in, histoCumul);
 // FIN AMELIORATION CONTRASTES
 
-//display_gray(image_out);
-disp(minHisto, maxHisto, histo, histoCumul);
+image_out3 = filtreMoyenneur(image_in);
+
+figure;
+display_gray(image_out3);
+//disp(minHisto, maxHisto, histo, histoCumul);
 
 
 //plot(histo2);
