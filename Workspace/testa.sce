@@ -13,6 +13,7 @@ img = zeros(8, 8);
 img(5, 5) = 255;
 img(5, 6) = 255;
 img(6, 6) = 255;
+img(8, 8) = 255;
 //writepbm(img, "/Users/Antoine/Documents/Exolife/Images/Mission_A/TestDilatation.pbm");
 
 calc = [0,0,0;0,255,255;0,255,0];
@@ -29,12 +30,3 @@ display_gray(image_out);
 
 figure;
 display_gray(image_out2);
-
-figure;
-display_gray(image_out3);
-
-
-
-
-
-

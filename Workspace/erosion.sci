@@ -16,7 +16,7 @@ function image_out=erosionImage(image, calque, centerX, centerY)
             end,
         end
     end
-    calque3 = calque2;
+    calque3 = zeros(SizeCalcX, SizeCalcY);
     for X = 1 : SizeCalcX
         for Y = 1 : SizeCalcY
             if calque2(X, Y) == 255 then
