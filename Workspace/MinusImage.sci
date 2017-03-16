@@ -11,12 +11,11 @@ function image_out=minusimg(img1,img2)
     
     for x = 1: img1SizeX;
         for y = 1: img1SizeY;
-            if x > img2SizeX || y > img2SizeY then
+            if x > img2SizeX | y > img2SizeY then
                 image_out(x, y) = img1(x, y);
-            elseif (img1(x, y)-img2(x,y))<0 then
+            elseif (img1(x,y)-img2(x,y))<0 then
                 image_out(x,y)=0;
-            else image_out(x,y)= img1(x,y)+img2(x,y);
-                
+            else image_out(x,y)= img1(x,y)-img2(x,y);
             end,
         end
     end
