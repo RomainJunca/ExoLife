@@ -1,8 +1,6 @@
 //Mission 2
 
 
-path = "/Users/Antoine/Documents/ExoLife/Images/Mission_A/Mars_surface.pbm";
-imgm2=readpbm(path);
 
 histo=histogrammeJG(imgm2);
 
@@ -30,6 +28,4 @@ function pourcent=moyenne (image)
     
 endfunction
 
-pourcent = moyenne(imgm2);
 
-disp (pourcent);
