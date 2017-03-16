@@ -1,6 +1,6 @@
 // 1 - Load Image
 
-path = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_A\Jupiter1.pbm"
+path = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_X\Gliese 581d V2.pbm"
 
 image_in = readpbm(path);
 
@@ -9,7 +9,7 @@ image_in = readpbm(path);
 //display_gray(image_in);
 
 
-// 3 - Test de seuillage, fail probable
+// 3 - Test de seuillage
 
 //image_out = seuilJG(image_in, 150);
 
@@ -27,6 +27,20 @@ image_out2 = ameliorationContrasteEgalisation(image_in, histoCumul);
 
 image_out2 = filtreGaussien(image_in);
 
+image_out3 = filtreMedian(image_in);
+
+image_out4 = filtreMedian(image_out3);
+
+histo2 = histogrammeJG(image_out4);
+histoCumul2 = histogrammeCumuleJG(histo2);
+image_out5 = ameliorationContrasteEgalisation(image_out3, histoCumul2);
+image_out7 = filtreMedian(image_out5);
+
+//minHisto2 = startHistoJG(histo2);
+//maxHisto2 = endHistoJG(histo2);
+//image_out6 = ameliorationCLJG(image_out4, minHisto2, maxHisto2);
+//image_out8 = filtreMedian(image_out6);
+
 figure;
 plot(histo);
 
@@ -37,7 +51,10 @@ figure;
 display_gray(image_out);
 
 figure;
-display_gray(image_out2);
+display_gray(image_out7);
+
+figure;
+display_gray(image_out5);
 //disp(minHisto, maxHisto, histo, histoCumul);
 
 

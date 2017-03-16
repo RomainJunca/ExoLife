@@ -1,23 +1,35 @@
 //Dilatation
 
-function img_out=eroimage(img)
+function image_out=erosionImage(image, calque, centerX, centerY)
     
-   
+    image1 = reverseColor(image);
     
-    img = Ineverse(img)
-
-    calc = Mirror(calc, centerX, centerY)
+    SizeCalcX = size(calque, 1);
+    SizeCalcY = size(calque, 2);
     
-    img = dilimage(img, calc, centerX, centerY)
+    calque2 = zeros(SizeCalcX, SizeCalcY);
     
-    img = Inverse(img)
+    for X = 1 : SizeCalcX
+        for Y = 1 : SizeCalcY
+            if calque(X, Y) == 255 then
+                calque2(SizeCalcX+1-X, Y) = 255;
+            end,
+        end
+    end
+    calque3 = calque2;
+    for X = 1 : SizeCalcX
+        for Y = 1 : SizeCalcY
+            if calque2(X, Y) == 255 then
+                calque3(X, SizeCalcY+1-Y) = 255;
+            end,
+        end
+    end
     
-    img_out = img;
+    disp(calque3, calque);
+    
+    
+    image2 = dilimage(image1, calque3, centerX, centerY);
+    image_out = reverseColor(image2);   
+    
 endfunction
-          
-               
 
-    
-    
-    
-endfunction
