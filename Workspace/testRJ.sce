@@ -9,7 +9,7 @@ img_in = readpbm(pathname);
 //display_gray(img_in);
 
 //Seuillage 2.0
-img_out = seuil2RJ(img_in,20,50,100);
+img_out = seuil3RJ(img_in,[20,50,100]);
 
 histo = histogrammeJG(img_out);
 
@@ -25,5 +25,5 @@ disp(img_out);
 //writepbm(img_in,"C:\Users\Romain\Desktop\PROJET EXOLIFE\ExoLife\Workspace\JupiterTestRJ.pbm");
 
 //Filtre Artistique
-//img_out = gsort(img_in, 'g', 'i');
+//mg_out = gsort(img_in, 'g', 'i');
 //display_gray(img_out);
