@@ -17,10 +17,10 @@ function image_out = dilimage(img,calc,centerX,centerY)
                 for xc = 1:calcSizeX,
                     for yc =1:calcSizeY,
                         if calc(xc,yc)==255 then 
-                            coX=(x-centerX)+xc
-                            coY=(y-centerY)+yc
+                            coX=(x-centerX)+xc;
+                            coY=(y-centerY)+yc;
                             if ~(coX <= 0 | coY <= 0 | coX >= imgSizeX | coY >= imgSizeY) then
-                                image(coX,coY)=255
+                                image(coX,coY)=255;
                             end,
                         end
                     end
