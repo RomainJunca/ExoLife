@@ -7,5 +7,5 @@ function indexHisto=endHistoJG(histogram)
             break;
         end,
     end
-    indexHisto =  257-indexHisto;
+    indexHisto =  256-indexHisto;
 endfunction

@@ -23,10 +23,21 @@ image_out = ameliorationCLJG(image_in, minHisto, maxHisto);
 image_out2 = ameliorationContrasteEgalisation(image_in, histoCumul);
 // FIN AMELIORATION CONTRASTES
 
-image_out3 = filtreMedian(image_in);
+//image_out3 = filtreMedian(image_in);
+
+image_out2 = filtreGaussien(image_in);
 
 figure;
-display_gray(image_out3);
+plot(histo);
+
+figure;
+display_gray(image_in);
+
+figure;
+display_gray(image_out);
+
+figure;
+display_gray(image_out2);
 //disp(minHisto, maxHisto, histo, histoCumul);
 
 

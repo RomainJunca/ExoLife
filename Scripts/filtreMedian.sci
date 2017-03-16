@@ -9,7 +9,7 @@ function image_out=filtreMedian(image)
     
     for X = 2 : SizeX-1,
         for Y = 2 : SizeY-1,
-            calqueMedian = [image(X-1, Y-1), image(X, Y-1), image(X+1, Y-1); image(X-1, Y), image(X, Y), image(X+1, Y); image(X-1, Y+1), image(X, Y+1), image(X+1, Y+1)];
+            calqueMedian = [image(X-1, Y-1), image(X, Y-1), image(X+1, Y-1), image(X-1, Y), image(X, Y), image(X+1, Y), image(X-1, Y+1), image(X, Y+1), image(X+1, Y+1)];
             calqueMedTri = gsort(calqueMedian, 'g', 'i');
             filtre = calqueMedTri(5);
             
