@@ -4,4 +4,5 @@ img_in = readpbm(pathname);
 
 img_out = filtreSobel(img_in);
 
+figure;
 display_gray(img_out);

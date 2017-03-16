@@ -1,6 +1,6 @@
 // 1 - Load Image
 
-path = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_X\Gliese 581d V2.pbm"
+path = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_B\Gliese 667Cc_surface.pbm"
 
 image_in = readpbm(path);
 
@@ -36,6 +36,10 @@ histoCumul2 = histogrammeCumuleJG(histo2);
 image_out5 = ameliorationContrasteEgalisation(image_out3, histoCumul2);
 image_out7 = filtreMedian(image_out5);
 
+histo3 = histogrammeJG(image_in);
+histoCumul3 = histogrammeCumuleJG(histo3);
+image_out99 = ameliorationContrasteEgalisation(image_in, histoCumul3);
+
 //minHisto2 = startHistoJG(histo2);
 //maxHisto2 = endHistoJG(histo2);
 //image_out6 = ameliorationCLJG(image_out4, minHisto2, maxHisto2);
@@ -56,6 +60,9 @@ display_gray(image_out7);
 figure;
 display_gray(image_out5);
 //disp(minHisto, maxHisto, histo, histoCumul);
+
+figure;
+display_gray(image_out99);
 
 
 //plot(histo2);
