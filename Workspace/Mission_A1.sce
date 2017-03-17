@@ -8,7 +8,7 @@ histogramme = histogrammeFct(img_in); //On affiche l'histogramme par le biais de
 
 img_out = seuilMissionA1(img_in,215); //On utilise une méthode de seuillage afin de délimiter la zone d'aterrissage (le seuil a été affecté par rapport à l'histogramme).
 
-
+pixelAtterrissage = pixelMissionA1(img_in, 216); //On récupère les coordonnées de l'image
 
 // Affichage
 
@@ -16,3 +16,4 @@ figure;
 plot(histogramme);
 figure;
 display_gray(img_out);
+disp(pixelAtterrissage);

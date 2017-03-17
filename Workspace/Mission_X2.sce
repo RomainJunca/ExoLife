@@ -1,5 +1,6 @@
-// Débruitage Image
+// Mission X2
 
+// Obtention de l'image
 pathname = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_X\Gliese 581d V2.pbm";
 img_in = readpbm(pathname);
 
