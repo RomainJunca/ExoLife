@@ -1,5 +1,5 @@
 
-pathname = "C:\Users\Romain\Desktop\PROJET EXOLIFE\ExoLife\Images\Mission_A\Europa_surface.pbm"; //Chemin de l'image.
+pathname = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_A\Europa_surface.pbm"; //Chemin de l'image.
 img_in = readpbm(pathname); //On récupère l'image.
 
 histogramme = histogrammeFct(img_in);    //On affiche l'histogramme par le biais de la méthode histogramme.

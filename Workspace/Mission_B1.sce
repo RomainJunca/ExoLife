@@ -1,4 +1,4 @@
-pathname = "C:\Users\Romain\Desktop\PROJET EXOLIFE\ExoLife\Images\Mission_B\Gliese 667Cc_surface.pbm"; //Chemin de l'image.
+pathname = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_B\Gliese 667Cc_surface.pbm"; //Chemin de l'image.
 img_in = readpbm(pathname); //On récupère l'image.
 
 histogramme = histogrammeFct(img_in); //Histogramme de l'image.
@@ -10,7 +10,7 @@ maxHisto = finHistogramme(histogramme);
 img_normalise = ameliorationContrasteNormalisation(img_in, minHisto, maxHisto);
 
 // Egalisation
-histogrammeCumule = histogrammeCumuleJG(histogramme);
+histogrammeCumule = histogrammeCumuleFct(histogramme);
 
 img_egalise = ameliorationContrasteEgalisation(img_in, histogrammeCumule);
 

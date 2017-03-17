@@ -2,7 +2,7 @@
 
 function image_out=erosionBinaire(image, calque, centerX, centerY)
     
-    image1 = inversionCouleur(image);
+    image1 = inversionCouleurs(image);
     
     SizeCalcX = size(calque, 1);
     SizeCalcY = size(calque, 2);
@@ -29,7 +29,7 @@ function image_out=erosionBinaire(image, calque, centerX, centerY)
     
     
     image2 = dilatationBinaire(image1, calque3, centerX, centerY);
-    image_out = inversionCouleur(image2);   
+    image_out = inversionCouleurs(image2);   
     
 endfunction
 

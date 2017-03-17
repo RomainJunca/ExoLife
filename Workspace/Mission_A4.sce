@@ -1,6 +1,6 @@
 
-pathname = "C:\Users\Romain\Desktop\PROJET EXOLIFE\ExoLife\Images\Mission_A\Jupiter1.pbm"; //Chemin de la première image.
-pathname2 = "C:\Users\Romain\Desktop\PROJET EXOLIFE\ExoLife\Images\Mission_A\Jupiter2.pbm"; //Chemin de la deuxième image.
+pathname = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_A\Jupiter1.pbm"; //Chemin de la première image.
+pathname2 = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_A\Jupiter2.pbm"; //Chemin de la deuxième image.
 jupiter1 = readpbm(pathname); //On récupère la première image.
 jupiter2 = readpbm(pathname2); //On récupère la deuxième image.
 

@@ -1,7 +1,7 @@
 //Mission 2
 
 //On prend l'image donnée
-path = "/Users/Antoine/Documents/ExoLife/Images/Mission_A/Mars_surface.pbm"
+path = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_A\Mars_surface.pbm"
 img_in = readpbm(path);
 
 //On utilise l'histogramme de cette image
