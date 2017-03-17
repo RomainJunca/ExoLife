@@ -2,10 +2,10 @@
 // Histogramme cumulé, prends en paramètre l'histogramme cumule
 
 function histoCumul=histogrammeCumuleJG(histo)
-    histoCumul = zeros(1, 256);
+    histoCumul = zeros(1, 256); //On crée une matrice nulle qui va contenir l'image modifiée (ici une matrice ligne).
     
-    for histoX = 1:256
-        for cumul = 1: histoX
+    for histoX = 1:256 //De l'intensité de pixel 1 à 256 (on rajoute 1 parce le tableau commence à 1 et non 0).
+        for cumul = 1: histoX //On calculera le nombre de pixels inférieurs à l'intensité.
             histoCumul(histoX) = histoCumul(histoX) + histo(cumul);
         end 
     end
