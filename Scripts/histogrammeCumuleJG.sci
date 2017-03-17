@@ -6,7 +6,7 @@ function histoCumul=histogrammeCumuleJG(histo)
     
     for histoX = 1:256 //De l'intensité de pixel 1 à 256 (on rajoute 1 parce le tableau commence à 1 et non 0).
         for cumul = 1: histoX //On calculera le nombre de pixels inférieurs à l'intensité.
-            histoCumul(histoX) = histoCumul(histoX) + histo(cumul);
+            histoCumul(histoX) = histoCumul(histoX) + histo(cumul); //Même calcul que pour l'histogramme en additionnant les pixels.
         end 
     end
     

@@ -7,7 +7,7 @@ function histo=histogrammeJG(image)
     
     for Y = 1:SizeY, //On parcourt la matrice.
         for X = 1:SizeX,
-            histo(image(X, Y)+1) = histo(image(X, Y)+1)+1;
+            histo(image(X, Y)+1) = histo(image(X, Y)+1)+1; //On incrémente à chaque nouveau pixel de même intensité.
         end
     end
 endfunction
