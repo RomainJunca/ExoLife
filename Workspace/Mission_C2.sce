@@ -5,8 +5,8 @@ img_in = readpbm(pathname);
 
 eStruct = [0, 0, 0;255, 255, 255;0, 0, 0];
 
-img_erosion = erosionImage(img_in, eStruct, 2, 2);
-img_out = dilimage(img_erosion, eStruct, 2, 2);
+img_erosion = erosionBinaire(img_in, eStruct, 2, 2);
+img_out = dilatationBinaire(img_erosion, eStruct, 2, 2);
 
 // Affichage
 figure;

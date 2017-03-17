@@ -1,13 +1,13 @@
 pathname = "C:\Users\Romain\Desktop\PROJET EXOLIFE\ExoLife\Images\Mission_B\Gliese 667Cc_surface.pbm"; //Chemin de l'image.
 img_in = readpbm(pathname); //On récupère l'image.
 
-histogramme = histogrammeJG(img_in); //Histogramme de l'image.
+histogramme = histogrammeFct(img_in); //Histogramme de l'image.
 
 // Normalisation
-minHisto = startHistoJG(histogramme);
-maxHisto = endHistoJG(histogramme);
+minHisto = debutHistogramme(histogramme);
+maxHisto = finHistogramme(histogramme);
 
-img_normalise = ameliorationCLJG(img_in, minHisto, maxHisto);
+img_normalise = ameliorationContrasteNormalisation(img_in, minHisto, maxHisto);
 
 // Egalisation
 histogrammeCumule = histogrammeCumuleJG(histogramme);

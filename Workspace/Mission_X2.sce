@@ -7,8 +7,8 @@ img_in = readpbm(pathname);
 image_median = filtreMedian(img_in);
 
 // Application de l'égalisation
-histogramme = histogrammeJG(img_in);
-histoCumul = histogrammeCumuleJG(histogramme);
+histogramme = histogrammeFct(img_in);
+histoCumul = histogrammeCumuleFct(histogramme);
 image_m_egalise = ameliorationContrasteEgalisation(image_median, histoCumul);
 
 // Ré application du filtre médian

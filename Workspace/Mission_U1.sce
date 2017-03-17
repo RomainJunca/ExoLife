@@ -3,10 +3,10 @@ pathname = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife
 img_in = readpbm(pathname);
 
 // Application de la normalisation afin d'avoir un meilleur contraste lors de l'application d'un filtre des contours
-histogramme = histogrammeJG(img_in);
-minHisto = startHistoJG(histogramme);
-maxHisto = endHistoJG(histogramme);
-img_norma = ameliorationCLJG(img_in, minHisto, maxHisto);
+histogramme = histogrammeFct(img_in);
+minHisto = debutHistogramme(histogramme);
+maxHisto = finHistogramme(histogramme);
+img_norma = ameliorationContrasteNormalisation(img_in, minHisto, maxHisto);
 
 // Application du filtre de Sobel afin de ne garder que les contours
 img_out = filtreSobel(img_norma);

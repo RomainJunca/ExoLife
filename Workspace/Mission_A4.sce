@@ -4,9 +4,9 @@ pathname2 = "C:\Users\Romain\Desktop\PROJET EXOLIFE\ExoLife\Images\Mission_A\Jup
 jupiter1 = readpbm(pathname); //On récupère la première image.
 jupiter2 = readpbm(pathname2); //On récupère la deuxième image.
 
-bruitJupiter  = minusimg(jupiter1, jupiter2); //On "extrait" le bruit des images.
+bruitJupiter  = soustractionImage(jupiter1, jupiter2); //On "extrait" le bruit des images.
 
-jupiterFinal1 = minusimg(jupiter1, bruitJupiter); //On soustrait le bruit obtenu précédemment de l'image de Jupiter.
+jupiterFinal1 = soustractionImage(jupiter1, bruitJupiter); //On soustrait le bruit obtenu précédemment de l'image de Jupiter.
 
 jupiterFinal2 = filtreMedian(jupiterFinal1); //On "affine" l'image avec le filtre médian, faisant ainsi disparaître le bruit.
 
