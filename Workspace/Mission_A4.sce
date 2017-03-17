@@ -1,17 +1,11 @@
 //Mission A4
 
-<<<<<<< Updated upstream
-pathname = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_A\Jupiter1.pbm"; //Chemin de la première image.
-pathname2 = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_A\Jupiter2.pbm"; //Chemin de la deuxième image.
-jupiter1 = readpbm(pathname); //On récupère la première image.
-jupiter2 = readpbm(pathname2); //On récupère la deuxième image.
-=======
 //On récupère les deux images.
-pathname = "C:\Users\Romain\Desktop\PROJET EXOLIFE\ExoLife\Images\Mission_A\Jupiter1.pbm"; 
-pathname2 = "C:\Users\Romain\Desktop\PROJET EXOLIFE\ExoLife\Images\Mission_A\Jupiter2.pbm"; 
+pathname = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_A\Jupiter1.pbm"; 
+pathname2 = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_A\Jupiter2.pbm"; 
 jupiter1 = readpbm(pathname); 
 jupiter2 = readpbm(pathname2); 
->>>>>>> Stashed changes
+
 
 //On "extrait" le bruit des images.
 bruitJupiter  = soustractionImage(jupiter1, jupiter2); 

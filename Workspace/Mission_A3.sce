@@ -1,13 +1,8 @@
 //Mission A3
 
-<<<<<<< Updated upstream
-pathname = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_A\Europa_surface.pbm"; //Chemin de l'image.
-img_in = readpbm(pathname); //On récupère l'image.
-=======
 //On récupère l'image.
-pathname = "C:\Users\Romain\Desktop\PROJET EXOLIFE\ExoLife\Images\Mission_A\Europa_surface.pbm"; //Chemin de l'image.
-img_in = readpbm(pathname); 
->>>>>>> Stashed changes
+pathname = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_A\Europa_surface.pbm";
+img_in = readpbm(pathname);
 
 //On affiche l'histogramme par le biais de la méthode histogramme.
 histogramme = histogrammeFct(img_in);    
