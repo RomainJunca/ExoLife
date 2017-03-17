@@ -32,7 +32,7 @@
 path = "/Users/Antoine/Documents/ExoLife/Images/Mission_A/Mars_surface.pbm"
 img_in = readpbm(path);
 
-histo = histogramme(img_in);
+histo = histogrammeJG(img_in);
 figure;
 plot(histo);
 
