@@ -1,7 +1,7 @@
 //Mission 2
 
 //On determine la fonction avec une image et un histogramme
-function pourcent=pourcentage(img,hist)
+function pourcent=pourcentagePixelsBlancs(img,hist)
     
     //On parcourt chaque pixel de l'image 
     sizeX = size(img, 1);

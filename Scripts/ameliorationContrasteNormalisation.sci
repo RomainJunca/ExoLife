@@ -2,7 +2,7 @@
 // Voir les commentaires pour startHisto et endHisto
 // Pour la suite, voir si possibilité d'ajouter différentes façon d'obtenir la courbe afin de mieux lisser
 
-function image_out=ameliorationCLJG(image, minHisto, maxHisto)
+function image_out=ameliorationContrasteNormalisation(image, minHisto, maxHisto)
     // Calcul de l'équation de la droite sous la forme y=ax+b avec a le coeficient directeur et b l'ordonnée à l'origine
     coefdir = 255/(maxHisto-minHisto);
     ordonneOrigine=-(-minHisto*coefdir);

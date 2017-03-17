@@ -1,6 +1,6 @@
 // Reverse Color Binary
 
-function image_out=reverseColor(image)
+function image_out=inversionCouleurs(image)
     
     SizeX = size(image, 1);
     SizeY = size(image, 2);

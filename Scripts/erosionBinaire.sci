@@ -1,8 +1,8 @@
 //Dilatation
 
-function image_out=erosionImage(image, calque, centerX, centerY)
+function image_out=erosionBinaire(image, calque, centerX, centerY)
     
-    image1 = reverseColor(image);
+    image1 = inversionCouleur(image);
     
     SizeCalcX = size(calque, 1);
     SizeCalcY = size(calque, 2);
@@ -28,8 +28,8 @@ function image_out=erosionImage(image, calque, centerX, centerY)
     disp(calque3, calque);
     
     
-    image2 = dilimage(image1, calque3, centerX, centerY);
-    image_out = reverseColor(image2);   
+    image2 = dilatationBinaire(image1, calque3, centerX, centerY);
+    image_out = inversionCouleur(image2);   
     
 endfunction
 

@@ -1,6 +1,6 @@
-//Addition Image
+//Multiplication Image
 
-function image_out=multimg(img1,img2)
+function image_out=multiplicationImage(img1,img2)
 
     img1SizeX = size(img1,1);
     img1SizeY = size(img1,2);

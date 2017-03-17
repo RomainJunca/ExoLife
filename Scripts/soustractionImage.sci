@@ -1,6 +1,6 @@
-//Addition Image
+//Soustraction Image
 
-function image_out=minusimg(img1,img2)
+function image_out=soustractionImage(img1,img2)
 
     //On récupère les valeurs longueurs/largeurs des deux images.
     img1SizeX = size(img1,1); 

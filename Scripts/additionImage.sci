@@ -1,6 +1,6 @@
 //Addition Image
 
-function image_out=addimg(img1,img2)
+function image_out=additionImage(img1,img2)
 
     img1SizeX = size(img1,1);
     img1SizeY = size(img1,2);

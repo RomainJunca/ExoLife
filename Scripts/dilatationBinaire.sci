@@ -1,6 +1,6 @@
 //Dilatation
 
-function image_out = dilimage(img,calc,centerX,centerY)
+function image_out = dilatationBinaire(img,calc,centerX,centerY)
     
     image=img
     imgSizeX = size (img, 1);

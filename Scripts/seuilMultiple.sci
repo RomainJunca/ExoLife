@@ -1,4 +1,4 @@
-function img_out = seuil2RJ(img, seuil1, seuil2, seuil3)
+function img_out = seuilMultiple(img, seuil1, seuil2, seuil3)
     size_X = size(img, 1);
     size_Y = size(img, 2);
     img_out = zeros(size_X, size_Y);

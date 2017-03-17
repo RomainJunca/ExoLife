@@ -1,6 +1,6 @@
 // Fonction pour faire un seuil
 
-function image_out=seuilJG(image, seuil)
+function image_out=seuilBasique(image, seuil)
     SizeX = size(image, 1); //On récupère la longueur de l'image à modifier.
     SizeY = size(image, 2); //On récupère la largeur de l'image à modifier.
     image_out = zeros(SizeX, SizeY); //On crée une matrice nulle qui va contenir l'image modifiée (ici une matrice ligne).
