@@ -1,7 +1,7 @@
-pathname = "C:\Users\Romain\Desktop\PROJET EXOLIFE\ExoLife\Images\Mission_B\Gliese 667Cc_surface.pbm";
-img_in = readpbm(pathname);
+pathname = "C:\Users\Romain\Desktop\PROJET EXOLIFE\ExoLife\Images\Mission_B\Gliese 667Cc_surface.pbm"; //Chemin de l'image.
+img_in = readpbm(pathname); //On récupère l'image.
 
-histogramme = histogrammeJG(img_in);
+histogramme = histogrammeJG(img_in); //Histogramme de l'image.
 
 // Normalisation
 minHisto = startHistoJG(histogramme);
