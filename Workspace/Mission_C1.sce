@@ -1,7 +1,11 @@
+//Mission C1
 
+
+//On récupère l'image
 pathname = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_Complementaire\Contours.pbm";
 img_in = readpbm(pathname);
 
+//Seuil de Sobel
 img_out = filtreSobel(img_in);
 
 // Affichage

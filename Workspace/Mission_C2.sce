@@ -1,11 +1,16 @@
-// Fonctionnel, il ne reste qu'à voir si on ne peut pas prendre un meilleur masque
+//Mission C2
 
+//On récupère l'image
 pathname = "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Images\Mission_Complementaire\Formes.pbm";
 img_in = readpbm(pathname);
 
+//On crée l'élement structurant
 eStruct = [0, 0, 0;255, 255, 255;0, 0, 0];
 
+//Erosion
 img_erosion = erosionBinaire(img_in, eStruct, 2, 2);
+
+//Dilatation
 img_out = dilatationBinaire(img_erosion, eStruct, 2, 2);
 
 // Affichage

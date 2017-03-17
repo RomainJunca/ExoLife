@@ -1,4 +1,4 @@
-// Reverse Color Binary
+// Inversion des couleurs binaire
 
 function image_out=inversionCouleurs(image)
     
@@ -8,7 +8,7 @@ function image_out=inversionCouleurs(image)
     
     for X=1:SizeX,
         for Y=1:SizeY,
-            image_out(X, Y) = 255 - image(X, Y);
+            image_out(X, Y) = 255 - image(X, Y); //Remplace chaque pixel par 255-(la valeur du pixel)
         end
     end
     

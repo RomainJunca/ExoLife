@@ -9,6 +9,8 @@ function image_out=erosionBinaire(image, calque, centerX, centerY)
     
     calque2 = zeros(SizeCalcX, SizeCalcY);
     
+    
+    //Application de l'effet Miroir à l'aide de boucle for
     for X = 1 : SizeCalcX
         for Y = 1 : SizeCalcY
             if calque(X, Y) == 255 then
@@ -16,7 +18,9 @@ function image_out=erosionBinaire(image, calque, centerX, centerY)
             end,
         end
     end
+    
     calque3 = zeros(SizeCalcX, SizeCalcY);
+    
     for X = 1 : SizeCalcX
         for Y = 1 : SizeCalcY
             if calque2(X, Y) == 255 then
@@ -27,7 +31,7 @@ function image_out=erosionBinaire(image, calque, centerX, centerY)
     
     disp(calque3, calque);
     
-    
+    //On applique la dilatation et l'inversion des couleurs binaires
     image2 = dilatationBinaire(image1, calque3, centerX, centerY);
     image_out = inversionCouleurs(image2);   
     
