@@ -27,3 +27,7 @@ display_gray(jupiterFinal1);
 
 figure;
 display_gray(jupiterFinal2);
+
+
+// Sauvegarde de l'image
+writepbm(jupiterFinal2, "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Rendus\MissionA4.pbm");

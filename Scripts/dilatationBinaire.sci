@@ -18,6 +18,7 @@ function image_out = dilatationBinaire(img,calc,centerX,centerY)
                 for xc = 1:calcSizeX,
                     for yc =1:calcSizeY,
                         if calc(xc,yc)==255 then //On applique la condition pour que le pixel sur lequel on applique l'élement structurant soit blanc.
+                            coX=(x-centerX)+xc;
                             coY=(y-centerY)+yc;
                             if ~(coX <= 0 | coY <= 0 | coX >= imgSizeX | coY >= imgSizeY) then //On applique les changement pour chaque pixel
                                 image(coX,coY)=255;

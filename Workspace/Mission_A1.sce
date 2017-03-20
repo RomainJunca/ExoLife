@@ -20,3 +20,6 @@ plot(histogramme);
 figure;
 display_gray(img_out);
 disp(pixelAtterrissage);
+
+// Sauvegarde de l'image
+writepbm(img_out, "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Rendus\MissionA1.pbm");

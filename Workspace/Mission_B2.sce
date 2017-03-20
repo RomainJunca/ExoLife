@@ -22,3 +22,7 @@ plot(histogramme);
 
 figure;
 display_gray(img_normalise);
+
+
+// Sauvegarde de l'image
+writepbm(img_normalise, "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Rendus\MissionB2.pbm");

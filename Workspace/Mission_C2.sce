@@ -19,3 +19,6 @@ display_gray(img_in);
 
 figure;
 display_gray(img_out);
+
+// Sauvegarde de l'image
+writepbm(img_out, "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Rendus\MissionC2.pbm");

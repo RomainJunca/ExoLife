@@ -35,3 +35,6 @@ display_gray(img_normalise);
 figure;
 display_gray(img_egalise);
 
+
+// Sauvegarde de l'image
+writepbm(img_egalise, "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Rendus\MissionB1.pbm");

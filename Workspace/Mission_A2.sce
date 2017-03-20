@@ -19,3 +19,6 @@ plot(histo);
 
 figure;
 display_gray(img_in);
+
+// Sauvegarde de l'image
+writepbm(img_in, "C:\Users\Jean-Guillaume P\Documents\Exia\A2\Projets\Imagerie\ExoLife\Rendus\MissionA2.pbm");
